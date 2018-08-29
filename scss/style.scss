@@ -1,0 +1,158 @@
+$--main-color: #0069c0;
+$--secondary-color: #2196f3;
+$--white: #ffffff;
+$--blur: #888888;
+
+* { 
+	box-sizing: border-box;
+}
+//hide scrollbar
+::-webkit-scrollbar{
+	width: 0px;
+	background: transparent;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+}
+
+a{
+	text-decoration: none;
+	color: $--white;
+}
+.outer-wrapper{
+	height: 100%;
+	width: 100%;		
+}
+.inner-wrapper{
+	height: 100%;
+	display: flex;
+}
+text{
+	color: $--white;
+	font-size: 15px;
+}
+
+header{
+	height: 56px;
+	background: $--main-color;
+	color: $--white;
+	box-shadow: 0 3px 11px 0px $--blur;
+	z-index: 100;
+	.inner-wrapper{
+		-webkit-align-items: center;
+		justify-content: center;
+		padding: 0 5px;
+	}
+
+	.title{
+		font-size: 20px;
+	}
+
+	.search-wrapper{
+		margin-left: 20px;
+		width: 100%;
+		#search {
+		  	height: 45px;
+		  	width: 100%;
+		  	max-width: 500px;
+		  	background: $--white;
+			border-radius: 10px;
+		  	position: relative;
+		  	transition: all 0.3s;
+			img {
+			  	height: 100%;
+			  	width: 40px;
+			  	top: 0px;
+			  	position: absolute;
+			  	right: 10px;
+			  	cursor: pointer;
+			}
+		 	input {
+			  	height: 100%;
+			  	width: 100%;
+			  	border: none;
+			  	border-radius: 100px;
+			  	padding-left: 20px;
+			  	font-size: 15px;
+			  	font-weight: 100;
+			}
+		}
+		#search input:focus{
+		 	outline: none;
+		}
+	}
+
+	.header-btns{
+		width: auto;
+	}
+}
+
+.logsign{
+	display: none;
+	position: absolute;
+	height: 100vh;
+	width: 250px;
+	background: $--white;
+	right: 0;
+	top: 0;
+}
+
+.navbar{
+	height: 50px;
+	width: 100%;
+	background: $--secondary-color;
+
+	.inner-wrapper{
+		justify-content: center;
+	}
+}
+.main-content{
+	height: 100vh;
+	.content{
+		float: left;
+		height: 350px;
+		width: 100%;
+		padding: 5px;
+		display: table;
+		justify-content: center;
+		-webkit-align-items: center;
+	}
+
+	.logo{
+		text-align: center;
+	}
+
+	.site-description{
+		padding-left: 25px; 
+		.title{
+			font-size: 30px;
+			font-weight: 600;
+		}
+		.description{
+			font-size: 18px;
+		}
+	}
+}
+
+
+// Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+	header{
+		.inner-wrapper{
+			padding: 0 35px;
+		}
+	}
+	.main-content{
+		.content{
+			display: flex;
+		}
+		.logo{
+			width: 50%;
+		}
+		.site-description{
+			width: 50%;
+		}
+	}
+} 
