@@ -1,6 +1,8 @@
-$--main-color: #0069c0;
-$--secondary-color: #2196f3;
+$--main-color: #212121;
+$--secondary-color: #888888;
 $--white: #ffffff;
+$--black: #000000;
+$--gray: #eeeeee;
 $--blur: #888888;
 
 * { 
@@ -15,6 +17,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: Roboto;
+	background: $--white;
 }
 
 a{
@@ -86,6 +89,15 @@ header{
 
 	.header-btns{
 		width: auto;
+		padding-left: 5px;
+		display: flex;
+		.propic{
+			height: 35px;
+			width: 35px;
+			background: #eee;
+			cursor: pointer;
+			border-radius: 50%;
+		}
 	}
 }
 
@@ -103,18 +115,65 @@ header{
 	height: 50px;
 	width: 100%;
 	background: $--secondary-color;
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 
 	.inner-wrapper{
 		justify-content: center;
 	}
+
+	ul{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	li{
+		float: left;
+		height: 100%;
+		a {
+			height: 100%;
+    		display: block;
+    		color: white;
+    		text-align: center;
+    		padding: 14px 8px;
+    		text-decoration: none;
+		}
+		a:hover {
+			background: #00000033;
+		}
+	}
+
+	.dropdown:hover .dropbtn {
+    	background-color: #00000033;
+	}
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: $--secondary-color;
+	    min-width: 160px;
+	    z-index: 1;
+
+	    a {
+		    color: $--white;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		    display: block;
+		    text-align: left;
+		}
+	}
 }
 .main-content{
 	height: 100vh;
+
 	.content{
 		float: left;
 		height: 350px;
 		width: 100%;
-		padding: 5px;
+		margin-top: 10px;
 		display: table;
 		justify-content: center;
 		-webkit-align-items: center;
@@ -122,16 +181,14 @@ header{
 
 	.logo{
 		text-align: center;
+		height: 300px;
 	}
 
 	.site-description{
-		padding-left: 25px; 
+		text-align: center;
 		.title{
 			font-size: 30px;
 			font-weight: 600;
-		}
-		.description{
-			font-size: 18px;
 		}
 	}
 }
@@ -149,10 +206,12 @@ header{
 			display: flex;
 		}
 		.logo{
-			width: 50%;
+			width: 40%;
+			min-width: 305px;
 		}
 		.site-description{
-			width: 50%;
+			width: 60%;
+			text-align: left;
 		}
 	}
 } 
