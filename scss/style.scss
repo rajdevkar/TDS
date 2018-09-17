@@ -181,7 +181,7 @@ header{
 		-webkit-align-items: center;
 		.title{
 			color: $--black;
-			font-size: 50px;
+			font-size: 30px;
 			font-weight: 600;
 		}
 	}
@@ -201,6 +201,13 @@ footer{
 	header{
 		.inner-wrapper{
 			padding: 0 35px;
+		}
+	}
+	.main-content{
+		.site-description{
+			.title{
+				font-size: 50px;
+			}
 		}
 	}
 } 

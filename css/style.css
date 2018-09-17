@@ -39,11 +39,12 @@ header .header-btns .propic { height: 35px; width: 35px; background: #eee; curso
 .main-content { height: 100vh; }
 .main-content .content { width: 100%; }
 .main-content .site-description { height: 250px; width: 100%; display: flex; justify-content: center; -webkit-align-items: center; }
-.main-content .site-description .title { color: #000000; font-size: 50px; font-weight: 600; }
+.main-content .site-description .title { color: #000000; font-size: 30px; font-weight: 600; }
 
 footer { margin-bottom: 2px; }
 footer .credits { position: absolute; right: 0; padding: 0 5px; }
 
-@media only screen and (min-width: 992px) { header .inner-wrapper { padding: 0 35px; } }
+@media only screen and (min-width: 992px) { header .inner-wrapper { padding: 0 35px; }
+  .main-content .site-description .title { font-size: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
