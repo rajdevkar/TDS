@@ -1,5 +1,6 @@
-$--main-color: #212121;
-$--secondary-color: #888888;
+$--main-color: #2196f3;
+$--dark-main-color: #1769aa;
+$--secondary-color: #f50057;
 $--white: #ffffff;
 $--black: #000000;
 $--gray: #eeeeee;
@@ -114,7 +115,7 @@ header{
 .navbar{
 	height: 50px;
 	width: 100%;
-	background: $--secondary-color;
+	background: $--dark-main-color;
 	position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -140,12 +141,12 @@ header{
     		text-decoration: none;
 		}
 		a:hover {
-			background: #00000033;
+			background: #17314670;
 		}
 	}
 
 	.dropdown:hover .dropbtn {
-    	background-color: #00000033;
+    	background-color: #17314670;
 	}
 	.dropdown:hover .dropdown-content {
 	    display: block;
@@ -153,7 +154,7 @@ header{
 	.dropdown-content {
 	    display: none;
 	    position: absolute;
-	    background-color: $--secondary-color;
+	    background-color: $--dark-main-color;
 	    min-width: 160px;
 	    z-index: 1;
 
@@ -168,50 +169,38 @@ header{
 }
 .main-content{
 	height: 100vh;
-
 	.content{
-		float: left;
-		height: 350px;
 		width: 100%;
-		margin-top: 10px;
-		display: table;
-		justify-content: center;
-		-webkit-align-items: center;
-	}
-
-	.logo{
-		text-align: center;
-		height: 300px;
 	}
 
 	.site-description{
-		text-align: center;
+		height: 250px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		-webkit-align-items: center;
 		.title{
-			font-size: 30px;
+			color: $--black;
+			font-size: 50px;
 			font-weight: 600;
 		}
 	}
 }
 
+footer{
+	margin-bottom: 2px;
+	.credits{
+		position: absolute;
+		right:0;
+		padding: 0 5px;
+	}
+}
 
 // Large devices (laptops/desktops, 992px and up)
 @media only screen and (min-width: 992px) {
 	header{
 		.inner-wrapper{
 			padding: 0 35px;
-		}
-	}
-	.main-content{
-		.content{
-			display: flex;
-		}
-		.logo{
-			width: 40%;
-			min-width: 305px;
-		}
-		.site-description{
-			width: 60%;
-			text-align: left;
 		}
 	}
 } 
