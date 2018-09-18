@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	if($count == 1) {
 		$_SESSION['login_user'] = $username;
 		$_SESSION['logged_in'] = True;
-		header("location: index");
+		header("location: dashboard.php");
 	}else {
 		$error = "Your Login Name or Password is invalid";
 		$_SESSION['logged_in'] = False;
