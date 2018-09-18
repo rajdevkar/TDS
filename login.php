@@ -1,5 +1,5 @@
 <?php include 'imports.php'; ?>
-<?php include 'logfun.php'; ?>
+<?php include 'database/logfun.php'; ?>
 <div class="form-wrapper">
 	<div class="form-container">
 		<form method="post" action="">
