@@ -1,5 +1,8 @@
-<?php include'imports.php'; ?>
-<?php include 'database/session.php'; ?>
+<?php 
+include'imports.php';
+include 'database/session.php'; 
+include 'database/functions.php';
+?>
 <header>
 	<div class="outer-wrapper">
 		<div class="inner-wrapper">
@@ -14,7 +17,7 @@
 				<ul>
 					<?php
 						if($logged_in){
-							echo "<li><a href='database/logout.php'>Logout</a></li>";
+							echo "<li><a onclick='Logout()'>Logout</a></li>";
 						} else{
 							echo "<li><a href='login.php'>Login</a></li>";
 						}

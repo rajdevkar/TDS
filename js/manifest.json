@@ -1,0 +1,22 @@
+{
+  "name": "ThinkDesignShare",
+  "short_name": "TDS",
+  "description": "A progressive webapp template, built with Flask.",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "icons": [{
+      "src": "https://answers.unity.com/storage/temp/48981-icon-192-transparent.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn1.iconfinder.com/data/icons/logotypes/32/chrome-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
