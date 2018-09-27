@@ -21,7 +21,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 		$sql_SELECT = "SELECT * FROM user WHERE username = '$username' and password = '$password'";
 		$result_select = $db->query($sql_SELECT);
 		$row = $result_select->fetch_assoc();
-		$_SESSION['username'] = $row["username"];
+		$_SESSION['name'] = $row["name"];
 		$_SESSION['username'] = $row["username"];
 		$_SESSION['email_id'] = $row["email_id"];
 		$_SESSION['phone'] = $row["phone"];

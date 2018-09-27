@@ -1,17 +1,22 @@
 <?php include 'imports.php'; ?>
 <?php include 'database/regfun.php'; ?>
+<register>
+<div class="title">
+	ThinkShareDesign
+</div>
 <div class="form-wrapper">
 	<div class="form-container">
-		<form method="post" action="">
-			<label>Register</label>
-			<input type="text" name="name" required="true" placeholder="Name" />
-			<input type="text" name="username" required="true" placeholder="Username" />
-			<input type="text" name="email_id" required="true" placeholder="Email id" />
-			<input type="text" name="phone" required="true" placeholder="Phone" />
-			<input type="password" name="password" required="true" placeholder="Password" />
-			<input type="password" name="cpassword" required="true" placeholder="Confirm Password" />
-			<input type="submit" value="Register" name="submit"/>
+		<form method="post" action="" onsubmit="return validateForm()">
+			<label>Connect Us..</label>
+			<input type="text" class="register" name="name" placeholder="Name" required/>
+			<input type="text" class="register" name="username" placeholder="Username" required/>
+			<input type="text" class="register" name="email_id" placeholder="Email id" required/>
+			<input type="text" class="register" name="phone" placeholder="Phone" required/>
+			<input type="password" class="register" name="password" placeholder="Password" required/>
+			<input type="password" class="register" name="cpassword" placeholder="Confirm Password" required/>
+			<input type="submit" class="register" value="Register" name="submit"/>
 		</form>
 	</div>
 </div>
+</register>
 <?php include 'footer.php'; ?>
