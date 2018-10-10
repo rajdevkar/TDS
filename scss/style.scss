@@ -61,8 +61,12 @@ header{
 		padding: 0 5px;
 	}
 
+	.title{
+    	margin: 0 2px;
+	}
+
 	.search-wrapper{
-		margin-left: 20px;
+		margin-left: 8px;
 		width: 100%;
 		#search {
 		  	height: 45px;
@@ -176,10 +180,6 @@ header{
 }
 
 .main-content{
-	height: 100vh;
-	.content{
-		width: 100%;
-	}
 	.title{
 		font-size: 25px;
 	}
@@ -189,6 +189,8 @@ header{
 		display: flex;
 		justify-content: center;
 		-webkit-align-items: center;
+	}
+	.posts-container{
 	}
 }
 login, register{
@@ -250,8 +252,6 @@ footer{
 	margin-bottom: 2px;
 	.credits{
 		width: 100%;
-		position: fixed;
-		bottom: 0;
 		padding: 5px;
 		.creator{
 			width: auto;
