@@ -8,7 +8,7 @@ a { text-decoration: none; color: #ffffff; }
 
 .outer-wrapper { height: 100%; width: 100%; }
 
-.inner-wrapper { height: 100%; display: flex; }
+.inner-wrapper { height: 100%; display: flex; -webkit-align-items: center; justify-content: center; padding: 0 5px; }
 
 text { color: #ffffff; font-size: 15px; }
 
@@ -19,7 +19,6 @@ li { float: left; height: 100%; }
 .title { color: #000000; font-size: 30px; font-weight: 600; }
 
 header { height: 56px; background: #2196f3; color: #ffffff; }
-header .inner-wrapper { -webkit-align-items: center; justify-content: center; padding: 0 5px; }
 header .title { margin: 0 2px; }
 header .search-wrapper { margin-left: 8px; width: 100%; }
 header .search-wrapper #search { height: 45px; width: 100%; max-width: 500px; background: #ffffff; border-radius: 10px; position: relative; transition: all 0.3s; }
@@ -55,6 +54,11 @@ login .form-wrapper .login, register .form-wrapper .login { width: 250px; }
 login .form-wrapper .register, register .form-wrapper .register { width: 350px; }
 login .form-wrapper input[type="text"], login .form-wrapper input[type="password"], login .form-wrapper input[type="submit"], register .form-wrapper input[type="text"], register .form-wrapper input[type="password"], register .form-wrapper input[type="submit"] { float: left; height: 45px; padding: 0 10px; margin: 5px 0; border: 1px solid #eeeeee; border-radius: 5px; }
 login .form-wrapper input[type="submit"], register .form-wrapper input[type="submit"] { background: #2196f3; color: #ffffff; font-size: 1em; cursor: pointer; }
+
+.profile { padding: 5px; }
+.profile .profile_name { display: grid; }
+.profile .pic { width: 200px; height: 200px; border-radius: 50%; }
+.profile text { color: #000000; }
 
 footer { margin-bottom: 2px; }
 footer .credits { width: 100%; padding: 5px; }

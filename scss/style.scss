@@ -32,6 +32,9 @@ a{
 .inner-wrapper{
 	height: 100%;
 	display: flex;
+	-webkit-align-items: center;
+	justify-content: center;
+	padding: 0 5px;
 }
 text{
 	color: $--white;
@@ -55,11 +58,6 @@ header{
 	height: 56px;
 	background: $--main-color;
 	color: $--white;
-	.inner-wrapper{
-		-webkit-align-items: center;
-		justify-content: center;
-		padding: 0 5px;
-	}
 
 	.title{
     	margin: 0 2px;
@@ -248,6 +246,22 @@ login, register{
 		}
 	}
 }
+
+.profile{
+	padding: 5px;
+	.profile_name{
+		display: grid;
+	}
+	.pic{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+	}
+	text{
+		color: $--black;
+	}
+}
+
 footer{
 	margin-bottom: 2px;
 	.credits{

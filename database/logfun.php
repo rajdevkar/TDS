@@ -19,9 +19,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$count = mysqli_num_rows($result);
 
 	if($count == 1) {
+		$_SESSION['id'] = $row["id"];
 		$_SESSION['name'] = $row["name"];
 		$_SESSION['username'] = $row["username"];
 		$_SESSION['email_id'] = $row["email_id"];
+		$_SESSION['propic_url'] = $row["propic_url"];
 		$_SESSION['phone'] = $row["phone"];
 		$_SESSION['logged_in'] = True;
 		header("location: dashboard.php");
